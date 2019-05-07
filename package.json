@@ -1,0 +1,42 @@
+{
+  "name": "zilliqa-bouncer",
+  "version": "0.1.0",
+  "description": "A Typescript implementation of a generic metatransaction bouncer proxy for Zilliqa",
+  "main": "dist/server.js",
+  "scripts": {
+    "build-ts": "tsc",
+    "start": "npm run serve",
+    "serve": "node dist/server.js",
+    "watch-node": "nodemon dist/server.js",
+    "watch-ts": "ts-node-dev src/server.ts",
+    "test": "ts-node node_modules/tape/bin/tape tests/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starling-foundries/zilliqa-bouncer.git"
+  },
+  "keywords": [
+    "zilliqa",
+    "blockchain",
+    "metatransactions"
+  ],
+  "author": "Cameron Sajedi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/starling-foundries/zilliqa-bouncer/issues"
+  },
+  "homepage": "https://github.com/starling-foundries/zilliqa-bouncer#readme",
+  "devDependencies": {
+    "@types/tape": "^4.2.33",
+    "nodemon": "^1.19.0",
+    "tape": "^4.10.1",
+    "ts-node-dev": "^1.0.0-pre.35",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@zilliqa-js/zilliqa": "^0.5.4",
+    "@types/express": "^4.16.1",
+    "express": "^4.16.4"
+  }
+}
