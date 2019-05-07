@@ -1,0 +1,11 @@
+{
+    "testAccount": {
+        "privateKey": "",
+        "address": ""
+    },
+    "networking": {
+        "CHAIN_ID": 2,
+        "MSG_VERSION": 1
+
+    }
+}

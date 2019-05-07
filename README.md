@@ -24,19 +24,23 @@ See development workflow
 
 ### Development
 
-1. clone the repo:
+1. Clone the repo:
 
     `git clone git@github.com:starling-foundries/zilliqa-bouncer.git`
 
-2. install deps:
+2. Install deps:
    
     `cd zilliqa-bouncer && npm install`
+
+3. Setup config.json (change networking, dummy accounts here if needed):
+
+    `cp config-base.json config.json`
    
-3. to begin serving: 
+4. To begin serving: 
    
     `npm run watch-ts` 
     
-4. Open in browser to see results:
+5. Open in browser to see results:
    
      `localhost:3000`
 
