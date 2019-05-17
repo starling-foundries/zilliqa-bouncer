@@ -1,13 +1,25 @@
 {
     "defaultSeverity": "error",
     "extends": [
-        "tslint:recommended"
+        "tslint:recommended", "tslint-config-prettier"
     ],
     "jsRules": {},
     "rules": {
-        "interface-name": [false],
-        "no-console": [false],
-        "quotemark": [true, "single"]
+        "interface-name": [true, "never-prefix"],
+        "member-access": false,
+        "no-angle-bracket-type-assertion": false,
+        "no-bitwise": false,
+        "no-console": false,
+        "no-default-export": true,
+        "no-empty-interface": false,
+        "no-implicit-dependencies": true,
+        "no-submodule-imports": false,
+        "ordered-imports": [false],
+        "object-literal-sort-keys": false,
+        "object-literal-key-quotes": [true, "as-needed"],
+        "quotemark": [true, "single"],
+        "semicolon": [true, "always", "ignore-bound-class-methods"],
+        "jsx-boolean-value": false
     },
     "rulesDirectory": []
 }

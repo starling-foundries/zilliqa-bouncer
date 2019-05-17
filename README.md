@@ -2,7 +2,7 @@
 
 ## Goals:
 
-* To implement a generic meta transaction bouncer proxy inspired by [austingriffith]() and [tsuzukits]() ethereum implementations but integrated into the [Zilliqa-native tooling](https://github.com/Zilliqa/Zilliqa-JavaScript-Library).
+* To implement a generic meta transaction (also known as [gasless transactions](https://medium.com/coinmonks/gasless-transactions-f75382095c4f)) bouncer-proxy inspired by [austingriffith](https://github.com/austintgriffith/bouncer-proxy) and [tsuzukits](https://github.com/tsuzukit/meta-transaction) ethereum implementations but using the [Zilliqa-native tooling](https://github.com/Zilliqa/Zilliqa-JavaScript-Library).
 * Provide a generic Docker process for straightforward deployment.
 * Integrate with a scilla-lang send by signature contract to be implemented in [references repo](https://github.com/starling-foundries/references).
 * reference contracts for on-chain resolution of metatransaction functions including: forward, execution and whitelist.
@@ -19,10 +19,7 @@
 ### Docker
 TODO
 
-###  NodeJS
-See development workflow
-
-### Development
+###  NodeJS Development
 
 1. Clone the repo:
 
@@ -32,7 +29,7 @@ See development workflow
    
     `cd zilliqa-bouncer && npm install`
 
-3. Setup config.json (change networking, dummy accounts here if needed):
+3. Setup config.json (change networking, accounts here if needed):
 
     `cp config-base.json config.json`
    
