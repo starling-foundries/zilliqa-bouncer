@@ -1,5 +1,8 @@
 # The Zilliqa-Bouncer Project
 
+## Maintenance note: 
+This repository has been archived due to challenges surrounding the use of the typescript compiler with the zilliqa-js-sdk. Please see `starling-foundries/bouncer.js` for a functioning bouncer.
+
 ## Goals:
 
 * To implement a generic meta transaction bouncer proxy inspired by [austingriffith]() and [tsuzukits]() ethereum implementations but integrated into the [Zilliqa-native tooling](https://github.com/Zilliqa/Zilliqa-JavaScript-Library).
